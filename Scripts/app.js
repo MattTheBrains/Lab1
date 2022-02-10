@@ -34,3 +34,9 @@ function loadProjects(){
 function loadServices(){
     document.getElementById("services").innerHTML = servicesMsg;
 }
+
+function navOnLoad(){
+    const productName = document.getElementsByClassName("products");
+    productName[0].innerHTML = "Projects";
+    // document.appendChild(htmlToAdd);
+}
