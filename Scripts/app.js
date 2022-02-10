@@ -16,6 +16,7 @@ var aboutIrina = "I am a Durham College student in ....";
 var projectsMatt = "The top three projects by Matt include a website to sort notes, a site to take notes for my next book, and my database program.";
 var projectsIrina = "The top three projects by Irina include...";
 var servicesMsg = "The top three services offered by Matt include programming, web development, and databases.  The three top services offered by Irina include ...";
+var addedLink = "<a style='padding:20px' class='humanresources' href='humanResources.html'>Human Resources</a>";
 
 function loadAbout(){
     document.getElementById("aboutMatt").innerHTML = aboutMatt;
@@ -38,5 +39,9 @@ function loadServices(){
 function navOnLoad(){
     const productName = document.getElementsByClassName("products");
     productName[0].innerHTML = "Projects";
-    // document.appendChild(htmlToAdd);
-}
+ }
+
+ function fixNav(){
+    const list = document.getElementsByClassName("contact");
+    list[0].insertAdjacentHTML("afterbegin", addedLink);
+ }
