@@ -14,10 +14,10 @@
         <a class="login" href="login.html">Login/Logout</a>
     </li>
     <li>
-        <a class="register" href="register.html">Register</a>
+        <a id="active" class="register" href="register.html">Register</a>
     </li>
     <li>
-        <a id="active" class="contact" href="contact.html">Contact Us</a>
+        <a class="contact" href="contact.html">Contact Us</a>
     </li>
     <li>
         <a class="about" href="about.html">About Us</a>
@@ -33,54 +33,40 @@
     </li>
 </ul>
 <div class='main-div'>
-    <h1>Contact Us</h1>
-    <table class="contact-us">
-        <form id = "aForm" action = "./index.html" method="post">
+    <h1>Register</h1>
+    <table class="register">
+        <form id = "aForm" action = "./register.html" method="post">
             <tr>
                 <td>
-                    
-                    <label for = "name">Name:</label>
+                    <input type = "text" id = "firstname" placeholder = "First Name">
                 </td>
                 <td>
-                    <input type = "text" id = "name" placeholder = "Enter name">
+                    <input type = "text" id = "lastname" placeholder = "Last Name">
                 </td>
             </tr>
             <tr>
-                <td>
-                <label for = "number">Phone Number:</label> 
-            </td>
             <td>
-                <input type = "text" id = "number" placeholder = "Enter phone number">
+                <input type = "email" id = "email" placeholder = "Email">
             </td>
             </tr>
             <tr>
                 <td>
-                <label for = "email">E-mail:</label>
-            </td>
-            <td>
-                <input type = "email" id = "email" placeholder = "Enter e-mail address">
-            </td>
-            </tr>
-            <tr>
-                <td>
-                <label for = "comments">Any comments?</label>
-            </td>
-            <td>
-                <textarea id = "comments" placeholder = "Enter comments here"  rows="6" ></textarea>
+                    <input type = "password" id = "password" placeholder = "Password">
                 </td>
             </tr>
             <tr>
                 <td>
-                
-            </td>
-            <td>
-                <button class = "form-button submit" type="button" onclick="setDelay()">Submit</button>
-                <input class = "form-button reset" id = "reset" type = "reset">
+                    <input type = "password" id = "confirmpassword" placeholder = "Confirm Password">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" value="Register">
                 </td>
             </tr>
         </form>
     </table>
-
+    <p id="linkregister">Already have an account?<a href="login.html">Sign in</a></p>
 <script>navOnLoad(); fixNav();</script>
 </div>
 </body>

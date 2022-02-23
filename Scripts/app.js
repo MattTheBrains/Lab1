@@ -1,11 +1,11 @@
 /*
-WEBD6201 - Lab 1
+WEBD6201 - Lab 2
 Matthew Ware - 100472787
 Irina Nazarova - 10078306
-Date Completed - November 11, 2022
+Date Completed - November 24, 2022
 */
 // Variables used to contain strings of text
-var welcomeMsg = "You have arrived at the WEBD 6201 Lab 1 Website for Matthew Ware and Irina Nazarova, Weclome to our website.  We have included links to our projects, services, about us, and a way to contact us.  Enjoy!";
+var welcomeMsg = "You have arrived at the WEBD 6201 Lab 2 Website for Matthew Ware and Irina Nazarova, Weclome to our website.  We have included links to our projects, services, about us, and a way to contact us.  Enjoy!";
 var aboutMatt = "I am Matthew Ware, a Durham College student in the Computer Programmer Analyst three year diploma.  I have a BA in Philosophy, a BSc in Psychology with a minor in Physics, a BA in Adult Education and Digital Technology, and hope to achieve another BSc in Computer Science.";
 var aboutIrina = "I am Irina Nazarova, a Durham College student in Computer Programming two year diploma";
 var projectsMatt = "The top three projects by Matt include a <b>website to sort notes</b>, a <b>site to take notes for my next book</b>, and my <b>database program</b>.";

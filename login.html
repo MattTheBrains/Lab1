@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>WEBD 6201 Lab 2</title>
+    <link rel="stylesheet" type="text/css" href="./Content/app.css">
+    <script src="./Scripts/app.js"></script>
+</head>
+<body>
+<ul class="nav">
+    <li style="float:left;color:white">
+        WEBD6201 - Lesson 2
+    </li>
+    <li>
+        <a id="active" class="login" href="login.html">Login/Logout</a>
+    </li>
+    <li>
+        <a class="register" href="register.html">Register</a>
+    </li>
+    <li>
+        <a class="contact" href="contact.html">Contact Us</a>
+    </li>
+    <li>
+        <a class="about" href="about.html">About Us</a>
+    </li>
+    <li>
+        <a class="services" href="services.html">Services</a>
+    </li>
+    <li>
+        <a class="products" href="products.html">Products</a>
+    </li>
+    <li>
+        <a class="home" href="index.html">Home</a>
+    </li>
+</ul>
+<div class='main-div'>
+    <h1>Login</h1>
+    <table class="login">
+        <form id = "aForm" action = "./login.html" method="post">
+            <tr>
+                <td>
+                    <label for = "username">Name:</label>
+                </td>
+                <td>
+                    <input type = "text" id = "username" placeholder = "Enter your username">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                <label for = "password">Password:</label> 
+            </td>
+            <td>
+                <input type = "password" id = "password" placeholder = "Enter your password">
+            </td>
+            </tr>
+            <tr>
+                <td>
+                <input type="submit" value="Login">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <p id="linkregister">Don't have an account?<a href="register.html">Register Here!</a></p>
+<script>navOnLoad(); fixNav();</script>
+</div>
+</body>
+</html>
