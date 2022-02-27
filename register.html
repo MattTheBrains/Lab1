@@ -3,6 +3,7 @@
 <head>
     <title>WEBD 6201 Lab 2</title>
     <link rel="stylesheet" type="text/css" href="./Content/app.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./Scripts/app.js"></script>
 </head>
 <body>
@@ -35,7 +36,7 @@
 <div class='main-div'>
     <h1>Register</h1>
     <table class="register">
-        <form id = "aForm" action = "./register.html" method="post">
+        <form id = "registerForm" action = "./register.html" method="post">
             <tr>
                 <td>
                     <input type = "text" id = "firstname" placeholder = "First Name">
@@ -61,7 +62,7 @@
             </tr>
             <tr>
                 <td>
-                <input type="submit" value="Register">
+                <button type="button" onclick="register()">Register</button>
                 </td>
             </tr>
         </form>
